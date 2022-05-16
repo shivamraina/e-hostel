@@ -16,7 +16,7 @@ function BookHostel() {
     const submit = async (e) =>{
         e.preventDefault();
         const body = {name};
-        const res = await axios.post('http://localhost:5000/api/bookhostel', body);
+        const res = await axios.post('/api/bookhostel', body);
         alert(res.data);
     }
     

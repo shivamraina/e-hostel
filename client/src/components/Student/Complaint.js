@@ -32,7 +32,7 @@ function Complaint() {
             name, mobile, complaint
         }
 
-        const res = await axios.post('http://localhost:5000/api/complaint', body)
+        const res = await axios.post('/api/complaint', body)
         alert(res.data)
     }
 

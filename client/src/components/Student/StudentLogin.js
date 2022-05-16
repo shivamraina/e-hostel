@@ -27,7 +27,7 @@ function StudentLogin() {
             email, password
         }
 
-        const res = await axios.post('http://localhost:5000/api/student/login', body);
+        const res = await axios.post('/api/student/login', body);
         console.log(res.data)
         if(res.status === 200) {
             history.push('StudentDash')
