@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function StudentSide() {
     return (
         <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabindex="-1" id="sidebar">
@@ -9,46 +10,46 @@ function StudentSide() {
             <hr class="dropdown-divider bg-light" />
           </li>
           <li>
-            <a href="/Student/HostelInfo" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Student/HostelInfo" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>HOSTEL INFO</span>
-            </a>
+            </Link>
           </li>
 
 
 
           <li>
-            <a href="/Student/BookHostel" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Student/BookHostel" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>BOOK HOSTEL</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Student/MessBill" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Student/MessBill" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>MESS BILL</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Student/FeesHostel" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Student/FeesHostel" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>FEES</span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/Student/LeaveApplication" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Student/LeaveApplication" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>LEAVE APPLICATION</span>
-            </a>
+            </Link>
           </li>
 
 
           <li>
-            <a href="/Student/Complaint" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Student/Complaint" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>COMPLAINT</span>
-            </a>
+            </Link>
           </li>
           
         </ul>

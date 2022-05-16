@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Login from './Login'
+import { Link } from 'react-router-dom';
 import history from "../../history";
 
 function Application() {
@@ -38,28 +39,28 @@ function Application() {
             <hr class="dropdown-divider bg-light" />
           </li>
           <li>
-            <a href="/Guest/Application" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/Application" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Application for accomodation</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Guest/HostelInfo" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/HostelInfo" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Hostels Info</span>
-            </a>
+            </Link>
           </li>
           <li>
-          <a href="/Guest/Fees" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/Fees" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Fees</span>
-            </a>
+            </Link>
           </li>
           <li>
-          <a href="/Guest/Feedback" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/Feedback" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Feedback</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -67,12 +68,12 @@ function Application() {
   </div>
         <div class="container">
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+    <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
       <svg class="bi me-2" width="40" height="32">
         <use/>
       </svg>
       <span class="fs-4">Guest</span>
-    </a>
+    </Link>
   </header>
 </div>
         <div class="form-row">

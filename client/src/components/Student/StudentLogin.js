@@ -1,6 +1,7 @@
 import Navbar from "../Home/Navbar";
 import {useState} from 'react'
 import axios from "axios";
+import { Link } from "react-router-dom";
 import history from "../../history";
 import StudentDash from "./StudentDash";
 
@@ -27,7 +28,7 @@ function StudentLogin() {
             email, password
         }
 
-        const res = await axios.post('/api/student/login', body);
+        const res = await axios.post('http://localhost:5000/api/student/login', body);
         console.log(res.data)
         if(res.status === 200) {
             history.push('StudentDash')
@@ -58,7 +59,7 @@ function StudentLogin() {
                             <button type="submit" class="btn btn-primary btn-block" onClick={login}> Click here to Login </button>
 
                             <div class="sign-up">
-                                Don't have an account? <a href="/Student/Register"> Create One </a>
+                                Don't have an account? <Link style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Student/Register"> Create One </Link>
                             </div>
                         </form>
                     </div>

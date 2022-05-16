@@ -22,8 +22,8 @@ function Navbar () {
                         Student
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link to="/Student/Register">Sign Up</Link>
-                        <a class="dropdown-item" href="/Student/Login">Login</a>
+                        <Link to="/Student/Register" style={{ textDecoration: 'none' , paddingLeft: '20px'}} class="dropdown-item">Sign Up</Link>
+                        <Link to="/Student/Login" style={{ textDecoration: 'none' , paddingLeft: '20px'}} class="dropdown-item">Login</Link>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -32,12 +32,12 @@ function Navbar () {
                         Guest
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Guest/Register">Sign Up</a>
-                        <a class="dropdown-item" href="/Guest/Login">Login</a>
+                        <Link style={{ textDecoration: 'none' , paddingLeft: '20px'}} class="dropdown-item" to="/Guest/Register">Sign Up</Link>
+                        <Link style={{ textDecoration: 'none' , paddingLeft: '20px'}} class="dropdown-item" to="/Guest/Login">Login</Link>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Attendant/Login">Attendant</a>
+                    <Link style={{ textDecoration: 'none' , paddingLeft: '20px'}} class="nav-link" to="/Attendant/Login">Attendant</Link>
                 </li>
             </ul>
         </div>

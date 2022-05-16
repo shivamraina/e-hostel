@@ -2,6 +2,7 @@ import StudentLogin from "./StudentLogin";
 import StudentNav from "./StudentNav";
 import StudentSide from "./StudentSide";
 import {useState} from 'react';
+import { Link } from "react-router-dom";
 
 function HostelInfo() {
     const [redirect, setRedirect] = useState(false);
@@ -50,7 +51,7 @@ function HostelInfo() {
 
             </div>
             <br />
-            <a class="btn btn-primary" href="/Student/StudentDash" role="button">Back</a>
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} class="btn btn-primary" to="/Student/StudentDash" role="button">Back</Link>
         </div>
         <div>
             <span>

@@ -1,6 +1,7 @@
 import Login from './Login'
 import history from "../../history";
 import {useState} from 'react'
+import { Link } from 'react-router-dom';
 
 
 function HostelInfo() {
@@ -38,28 +39,28 @@ function HostelInfo() {
             <hr class="dropdown-divider bg-light" />
           </li>
           <li>
-            <a href="/Guest/Application" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/Application" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Application for accomodation</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Guest/HostelInfo" class="nav-link px-3">
+            <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/HostelInfo" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Hostels Info</span>
-            </a>
+            </Link>
           </li>
           <li>
-          <a href="/Guest/Fees" class="nav-link px-3">
+          <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/Fees" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Fees</span>
-            </a>
+            </Link>
           </li>
           <li>
-          <a href="/Guest/Feedback" class="nav-link px-3">
+          <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Guest/Feedback" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-book-fill"></i></span>
               <span>Feedback</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

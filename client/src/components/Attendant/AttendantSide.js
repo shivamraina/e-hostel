@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function AttendantSide() {
     return (
         <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabIndex="-1" id="sidebar">
@@ -9,41 +10,41 @@ function AttendantSide() {
                   <hr class="dropdown-divider bg-light" />
                 </li>
                 <li>
-                  <a href="/Attendant/AttendantDashboard" class="nav-link px-3 active">
+                  <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to="/Attendant/AttendantDashboard" class="nav-link px-3 active">
                     <span class="me-2"><i class="bi bi-speedometer2"></i></span>
                     <span>Dashboard</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href='/Attendant/HostelDetails' class="nav-link px-3">
+                  <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to='/Attendant/HostelDetails' class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-book-fill"></i></span>
                     <span>HOSTELLER DETAILS</span>
-                  </a>
+                  </Link>
                   </li>
                 <li>
-                  <a href='/Attendant/EmployeeDetails' class="nav-link px-3">
+                  <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to='/Attendant/EmployeeDetails' class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-book-fill"></i></span>
                     <span>EMPLOYEE DETAILS</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a  href='/Attendant/Fees' class="nav-link px-3">
+                  <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to='/Attendant/Fees' class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-book-fill"></i></span>
                     <span>FEES</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='/Attendant/Gallery' class="nav-link px-3">
+                  <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to='/Attendant/Gallery' class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-book-fill"></i></span>
                     <span>GALLERY</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='/Attendant/Complaint' class="nav-link px-3">
+                  <Link  style={{ textDecoration: 'none' , paddingLeft: '20px'}} to='/Attendant/Complaint' class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-book-fill"></i></span>
                     <span>COMPLAINTS</span>
-                  </a>
+                  </Link>
                 </li>
                 
 
