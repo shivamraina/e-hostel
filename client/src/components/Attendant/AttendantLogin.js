@@ -26,7 +26,7 @@ function AttendantLogin() {
             password: password,
         }
 
-        const res = await axios.post('http://localhost:5000/api/attendant/register', body);
+        const res = await axios.post('/api/attendant/register', body);
         console.log(res.data)
         if(res.status === 200) {
             history.push('AttendantDashboard')

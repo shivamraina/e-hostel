@@ -13,7 +13,7 @@ function HostelDetails() {
     }, [])
 
     const getData = async() => {
-        const res = await axios.get('http://localhost:5000/api/bookhostel');
+        const res = await axios.get('/api/bookhostel');
         setUser(res.data)
     }
 

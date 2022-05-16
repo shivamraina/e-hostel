@@ -14,7 +14,7 @@ function FeesHostel() {
     }, [])
 
     const getData = async() => {
-        const res = await axios.get('http://localhost:5000/api/fees')
+        const res = await axios.get('/api/fees')
         setFees(res.data)
     }
 

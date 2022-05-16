@@ -15,7 +15,7 @@ function Gallery() {
     }, [])
 
     const getData = async() => {
-      const res = await axios.get('http://localhost:5000/api/complaint')
+      const res = await axios.get('/api/complaint')
       setComplaints(res.data);
     }
 

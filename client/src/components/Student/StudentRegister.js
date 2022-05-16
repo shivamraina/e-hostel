@@ -115,7 +115,7 @@ function StudentRegister() {
             studentType, name, email, password, sid, branch, address, city, state, pincode, fatherName, motherName, dob, jee, percent12, percent10, mobile
         }
 
-        const res = await axios.post('http://localhost:5000/api/student/reg', body);
+        const res = await axios.post('/api/student/reg', body);
         alert(res.data)
     }
 

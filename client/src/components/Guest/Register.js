@@ -38,7 +38,7 @@ function Register() {
             confirmPassword: confirmPassword
         }
 
-        const res = await axios.post('http://localhost:5000/api/guest/reg', body);
+        const res = await axios.post('/api/guest/reg', body);
         alert(res.data)
     }
 
