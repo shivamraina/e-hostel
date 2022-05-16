@@ -7,6 +7,7 @@ const guest = require('./routes/guest')
 const attendant = require('./routes/attendant')
 const student = require('./routes/student')
 const complaint = require('./routes/complaint')
+const path = require('path')
 const fees = require('./routes/fees')
 const { Student } = require('./models/student')
 
