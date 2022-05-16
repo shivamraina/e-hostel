@@ -22,7 +22,7 @@ function Navbar () {
                         Student
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Student/Register">Sign Up</a>
+                        <Link to="/Student/Register">Sign Up</Link>
                         <a class="dropdown-item" href="/Student/Login">Login</a>
                     </div>
                 </li>
